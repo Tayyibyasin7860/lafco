@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" xmlns:fb="http://ogp.me/ns/fb#">
+<head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <base href="http://professional.lafco.com/mm5/"/>-->
+    <title itemprop="name">Lafco New York</title>
+    <link rel="preconnect" href="//www.google-analytics.com" data-resource-group="css_list"
+          data-resource-code="preconnect-google-analytics"/>
+    <link href="https://fonts.gstatic.com" data-resource-group="css_list" data-resource-code="preconnect-google-fonts"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700|Roboto:400i&amp;display=optional"
+          data-resource-group="css_list" data-resource-code="google-fonts"/>
+    <link media="all" rel="stylesheet" type="text/css"
+          href="http://professional.lafco.com/mm5/json.mvc?Store_Code=PLFCO&amp;Function=CSSCombinedResource_Output&amp;CSSCombinedResource_Code=stylesheet&T=651c4c01"
+          data-resource-group="css_list" data-resource-code="stylesheet"/>
+    <script type="text/javascript">
+        var MivaVM_API = "Redirect";
+        var MivaVM_Version = "5.33";
+        var json_url = "http:\/\/professional.lafco.com\/mm5\/json.mvc\u003F";
+        var json_nosessionurl = "http:\/\/professional.lafco.com\/mm5\/json.mvc\u003F";
+        var Store_Code = "PLFCO";
+    </script>
+    <script type="text/javascript"
+            src="http://professional.lafco.com/mm5/clientside.mvc?T=5d3f41cf&amp;Module_Code=cmp-cssui-searchfield&amp;Filename=runtime.js"
+            integrity="sha512-eNibQsunImmm6N17SQffe62E4zB/2YxsdEqmdbap+S5EqgI8jusC2SlVm01UhsR3PiO5p11ZO3jToHTv6NclmQ=="
+            crossorigin="use-credentials" async defer></script>
+    <script type="text/javascript">
+        var MMSearchField_Search_URL_sep = "https:\/\/professional.lafco.com\/search.html\u003FSearch=";
+        (function (obj, eventType, fn) {
+            if (obj.addEventListener) {
+                obj.addEventListener(eventType, fn, false);
+            } else if (obj.attachEvent) {
+                obj.attachEvent('on' + eventType, fn);
+            }
+        })(window, 'mmsearchfield_override', function () {
+            MMSearchField.prototype.Menu_Show = function () {
+                if (this.menu_visible) {
+                    return;
+                }
+                this.menu_visible = true;
+            };
+            MMSearchField.prototype.Menu_Hide = function () {
+                if (this.menu_visible) {
+                    return;
+                }
+                this.menu_visible = true;
+            };
+            MMSearchField.prototype.onMenuAppendHeader = function () {
+                return null;
+            };
+            MMSearchField.prototype.onMenuAppendItem = function (data) {
+                let span;
+                span = newElement('div', {'class': 'u-text-center t-search-preview__item'}, null, null);
+                span.innerHTML = data;
+                return span;
+            };
+            MMSearchField.prototype.onMenuAppendStoreSearch = function (search_value) {
+                let item;
+                item = newElement('div', {'class': 'x-search-preview__search-all'}, null, null);
+                item.element_text = newTextNode('Search store for... "' + search_value + '"', item);
+                return item;
+            };
+            MMSearchField.prototype.onFocus = function () {
+                this.element_menu.classList.toggle('x-search-preview--open');
+            };
+            MMSearchField.prototype.onBlur = function () {
+                this.element_menu.classList.toggle('x-search-preview--open');
+            };
+            /**
+             * Uncomment this to debug the layout styles of the results container.
+             */
+            /*
+            MMSearchField.prototype.Menu_Empty = function() {
+            this.Menu_Item_Select( null );
+            };
+            */
+            /**
+             * Global search controls.
+             */
+            (function () {
+                'use strict';
+                let searchOpeners = document.querySelectorAll('[data-hook="open-search"]');
+                let searchCloser = document.querySelector('[data-hook="close-search"]');
+                /**
+                 * Open global search and set focus to the input field.
+                 */
+                searchOpeners.forEach(function (searchOpener) {
+                    searchOpener.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        document.documentElement.classList.toggle('has-active-search-preview');
+                        document.querySelector('[data-hook="global-search"]').focus();
+                    });
+                });
+                /**
+                 * Close global search.
+                 */
+                searchCloser.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('has-active-search-preview');
+                });
+                /**
+                 * Close global search when the `Esc` key is pressed.
+                 */
+                window.addEventListener('keydown', function (keyEvent) {
+                    if (keyEvent.defaultPrevented) {
+                        return; // Do nothing if the event was already processed
+                    }
+                    switch (keyEvent.key) {
+                        case 'Escape':
+                            if (document.documentElement.classList.contains('has-active-search-preview')) {
+                                document.documentElement.classList.toggle('has-active-search-preview');
+                            }
+                            break;
+                        default:
+                            return;
+                    }
+                    keyEvent.preventDefault();
+                }, true);
+            }());
+        });
+    </script>
+    <script type="text/javascript"
+            src="http://professional.lafco.com/mm5/clientside.mvc?T=5d3f41cf&amp;Filename=runtime.js"
+            integrity="sha512-3tlOdQSx5j/MzycgNxZ89+M4/De0e/GHx5aGVEEaoQgQgSlQWWMdkbbOsx2FWuLWMBLiPawdvm+jVkqegZjwiw=="
+            crossorigin="use-credentials" async defer></script>
+    <script type="text/javascript"
+            src="http://professional.lafco.com/mm5/clientside.mvc?T=5d3f41cf&amp;Filename=runtime_ui.js"
+            integrity="sha512-ocd18AvbZd0MOXiCPPtD4nvH6uFPm3uXKfyNvPjXkDNhj+6x3WRCak/9VSSxOSxShyOqObZpRZ+4X2eoqFpO1g=="
+            crossorigin="use-credentials" async defer></script>
+    <script type="text/javascript"
+            src="http://professional.lafco.com/mm5/clientside.mvc?T=5d3f41cf&amp;Filename=ajax.js"
+            integrity="sha512-lXG73VCabaOb550ryVIlIOORZ7tc8GwZVQQRvx9x8RMQygK3m7t3wV694KzhAwSkPnIOBUwsz7Y8+zoCBHYKaQ=="
+            crossorigin="use-credentials" async defer></script>
+    <link rel="canonical" href="https://professional.lafco.com/" itemprop="url">
+
+    <script type="text/javascript"
+            src="http://professional.lafco.com/mm5/clientside.mvc?T=5d3f41cf&Module_Code=mvga&amp;Filename=mvga.js"></script>
+    <script type="text/javascript" src="scripts/00000001/runtime_combofacets.js?T=a72ccde7"
+            data-resource-group="head_tag" data-resource-code="runtimecombofacets"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/json.css">
+</head>
+<body id="js-SFNT" class="o-site-wrapper t-page-sfnt u-bg-gray-10">
+
+<!-- end t-site-header -->
+<main class="bg-white">
+    <div class="container-div">
+        <div id="inner_content" class="col-xs-12">
+            <div id="outer_ws_portal" class="col-sm-12">
+                <div id="inner_ws_portal" class="text-center">
+                    <h1 class="">Wholesale Portal</h1>
+                    <div class="">Enter Your business email to log in or to apply as a partner</div>
+                    <div class="col-md-12">
+                        <input type="text" placeholder="Email*" class="col-md-7 col-sm-7 form-control"
+                               id="inner_ws_btn"><br>
+                        <input type="button" value="CONTINUE"
+                               class="btn btn-outline-primary px-2 py-2"></div>
+                </div>
+            </div>
+        </div>
+        <div id="our_story" style="background-color: #f4f8ff; overflow: auto;">
+            <div class="p-5 col-lg-6 col-md-6 col-sm-12 float-left">
+                <img src="images/Home-Page-2.jpg" class="img-responsive col-lg-5" alt="" style="width: 96%;">
+            </div>
+            <div class="col-lg-6 col-md-5 float-left" id="our_promise_right">
+                <div class="text-center"><h2 id="h2_1">OUR<b>PURE</b>PROMISE</h2></div>
+                <div id="oppr_1">
+                    <p> Our Pure Promise is about fragrance, thoughtful,
+                        craftsmanship and pure ingredients.</p>
+                    <p> It's about what's in it for you.</p>
+                </div>
+                <div id="oppr_2" class="col-md-11 col-sm-10 p-0">
+                    <h2> Quality</h2>
+                    <p> We craft are products using highly concentrated essential oils,
+                        high quality wax and ethically sourced pure ingredients.</p>
+                    <h2> Artistry</h2>
+                    <p>We work closely with expert glass-blowing artists to create the
+                        vessels that hold our thoughtfully blended fragranced product.</p>
+                </div>
+                <div class="text-center" id="out_story_btnn">
+                    <input type="button" id="our_story_btn" value="OUR STORY"
+                           class="btn btn-outline-primary col-lg-4 col-md-6 col-sm-8">
+                </div>
+            </div>
+        </div>
+        <div id="nw_arrivals" class="bg-white" style="clear: both; padding-top: 5%;">
+            <div class="text-center" style="overflow: auto;">
+                <h2>Newest Arrivals</h2>
+                <span class="float-left" id="start_browsint">Start Browsing</span>
+                <span class="float-right" id="see_all_span"><b>SEE ALL</b></span>
+            </div>
+            <div id="blus_rose_container">
+                <div id="blus_rose">
+                    <div class=" col-lg-3 col-md-6 col-sm-6 float-left px-3" style="">
+                        <img src="images/Home-Page-7-min.jpg" alt="" class="img-responsive">
+                        <b class="pb-2">Blush Rose Candle</b>
+                        <div>
+                            A Celebration of roses reveals the iconic flower in a new light. A delicate blend of damask
+                            and
+                            may
+                            roses, with a hint of bergamot, creates a bouquet of freshly picked flowers.
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 float-left px-3">
+                        <img src="images/Home-Page-8-min.jpg" alt="" class="img-responsive">
+                        <b class="pb-2">Due Gift Sets</b>
+                        <div>
+                            Our beautifully illustrated coffret features two best selling Classic Candles 6.5oz
+                            specially
+                            paired
+                            to
+                            evoke the fresh scents of spring.
+                        </div>
+                    </div>
+                </div>
+                <div style="overflow: auto;" class="col-lg-6 col-md-12 col-sm-12 p-0" id="disc_six_best">
+                    <div class=" col-md-6 col-sm-6 float-left px-3" style="">
+                        <img src="images/Home-Page-5-min.jpg" alt="" class="img-responsive">
+                        <b class="pb-2">Travel Candles 4 oz.</b>
+                        <div>
+                            Discover 6 best selling fragrances with our Travel Candles 4oz. Perfect for the jet-setter
+                            on
+                            the
+                            go.
+                            From office to hotel, instantly bring light and scent to any space.
+                        </div>
+                    </div>
+                    <div class=" col-md-6 col-sm-6 float-left px-3" style="">
+                        <img src="images/Home-Page-6-min.jpg" alt="" class="img-responsive">
+                        <b class="pb-2">Classic Diffuses 6 oz.</b>
+                        <div>
+                            Crafted with premium quality fragrances and delivered in a beautiful glass vessel with
+                            hand-cut
+                            reeds,
+                            our diffusers fill your home with luxurious fragrances.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bgimage">
+            <div id="lafco1" class="col-md-11">
+                <h2> LAFCO Blog </h2>
+                <p> Have you ever wondered about the details that go into candle manufacturing and
+                    distribution. Have you ever wondered what the difference between soy and parafin
+                    wax. What about the purity of ingredients of hand cream and liquid soap you're using.</p>
+            </div>
+            <div id="lafco1_btn" class="bg-white p-2"><input type="button" value="READ THE BLOG"
+                                                             class="btn btn-outline-primary px-2 py-2"></div>
+        </div>
+        <div id="part_spotlight" class="p-3 pt-5">
+            <div class="col-md-6 col-sm-12 float-left" id="part_spotlight_text">
+                <h2> Partner spotlight </h2>
+                <i id="italic_1"> Business Name is examplarary because of X and they do this and then that and in 2020
+                    they
+                    were the
+                    highest selling
+                    boutique in all of North of America.</i>
+                <p class="mt-4"> Each month we highlight a different LAFCO Partner. For a chanced to be featured on our
+                    partner
+                    spotlight,
+                    email lafconews@lafco.com and tell us about your business.</p>
+            </div>
+            <div id="square" class="col-md-6 col-sm-8 float-left mt-5"></div>
+        </div>
+        <div id="lafco_rewards" class="p-5 text-center">
+            <h2 class="col-lg-4 col-md-4 col-sm-6 pb-3">LAFCO <br><span style="font-weight: lighter">REWARDS</span></h2>
+            <div id="text3" class="col-md-11">
+                Wholesale accounts who join LAFCO Rewards are entered into membership tiers based on how much money they
+                spend on
+                their wholesale orders annually. Each wholesale membership tier earns a different number of points per
+                dollar spent.
+                Accounts can exchange their points for a variety of rewards, from freight discounts to special LAfCO
+                branded
+                events...
+            </div>
+            <div id="rewards_pics" class="text-center">
+                <div id="rewards_first3" style="overflow: auto; ">
+                    <div class="col-md-4 col-sm-12 float-left mt-5">
+                        <img src="images/reward-1.JPG" alt="" class="img-responsive m-0-auto">
+                        <label class="">Frieght Discounts</label>
+                    </div>
+                    <div class="col-md-4 col-sm-12 float-left mt-5">
+                        <img src="images/reward-2.JPG" alt="" class="img-responsive m-0-auto">
+                        <label>Delux GWPs</label>
+
+                    </div>
+                    <div class="col-md-4  col-sm-12 float-left mt-5">
+                        <img src="images/reward-3.JPG" alt="" class="img-responsive m-0-auto">
+                        <label>Free Lafco Product</label>
+
+                    </div>
+                </div>
+                <div class="m-0-auto" id="rewards_last2">
+                    <div class="col-md-6 col-sm-12 float-left" id="reward_4">
+                        <img src="images/reward-4.JPG" alt="" class="" id="img4"><br>
+                        <label id="img4_label" style="">Exclusive Payment Terms</label>
+
+                    </div>
+                    <div class="col-md-6 col-sm-12 float-left" id="reward_5">
+                        <img src="images/reward-5.JPG" alt="" class="" id="img5"><br>
+                        <label id="img5_label">In-store Events</label>
+
+                    </div>
+                </div>
+                <div class="clear text-center mb-5" id="rewards_btn">
+                    <input type="button" value="LEARN MORE" class="col-lg-3 btn btn-outline-primary col-md-4 col-sm-8">
+                </div>
+
+            </div>
+        </div>
+        <div id="non_toxic" class="clear text-center">
+            <div class="col-md-5 col-sm-8" id="best_non">
+                <h2>"The Best Nontoxic, Clean-Burning Candles."</h2>
+            </div>
+            <div class="col-md-10" style="margin: 0 auto;">
+                <div class="col-lg-2 col-md-4 col-sm-4 float-left px-3">
+                    <img src="images/Home-Page-18.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 float-left">
+                    <img src="images/Home-Page-12.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 float-left">
+                    <img src="images/Home-Page-13.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 float-left">
+                    <img src="images/Home-Page-14.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 float-left">
+                    <img src="images/Home-Page-15.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 float-left">
+                    <img src="images/Home-Page-19.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- end t-site-content -->
+<footer class="o-wrapper o-wrapper--flush o-wrapper--full u-bg-white t-site-footer">
+    <div class="o-wrapper">
+        <div class="o-layout u-grids-2 u-grids-3--l u-text-center t-site-footer__headlines">
+            <section class="o-layout__item">
+                <ul class="o-list-inline">
+                    <li class="o-list-inline__item u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase t-site-footer__headlines-title">
+                        Call Us:
+                    </li>
+                    <li class="o-list-inline__item u-text-medium t-site-footer__headlines-detail">212-925-0001</li>
+                </ul>
+            </section>
+            <section class="o-layout__item">
+                <ul class="o-list-inline">
+                    <li class="o-list-inline__item u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase t-site-footer__headlines-title">
+                        Email:
+                    </li>
+                    <li class="o-list-inline__item u-text-medium t-site-footer__headlines-detail">brittanyb@lafco.com
+                    </li>
+                </ul>
+            </section>
+            <section class="o-layout__item u-hidden u-inline-block--l">
+                <ul class="o-list-inline">
+                    <li class="o-list-inline__item u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase t-site-footer__headlines-title">
+                        Questions:
+                    </li>
+                    <li class="o-list-inline__item t-site-footer__headlines-detail">
+                        <a class="t-primary-link" href="https://professional.lafco.com/faqs.html">FAQs</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <hr class="c-keyline">
+        <div class="o-layout t-site-footer__content">
+            <section class="o-layout__item u-width-12 u-width-4--l" itemscope itemtype="http://schema.org/Organization">
+                <link itemprop="url" href="//professional.lafco.com/">
+                <link itemprop="logo" href="graphics/00000001/colossus.png"/>
+                <p class="u-hidden u-shown--l">
+                    <a class="u-text-no-decoration" href="https://professional.lafco.com/storefront.html">
+                        <img class="t-logo-image" src="graphics/00000001/colossus.png" alt="Colossus ReadyTheme">
+                    </a>
+                    <br>
+                </p>
+                <div id="newsletter_form" class="readytheme-contentsection">
+                    <form class="t-newsletter-form" action="#">
+                        <h5 class="c-menu__title u-color-gray-50 u-font-tiny u-text-center u-text-left--l u-text-medium u-text-uppercase">
+                            Stay In The Know</h5>
+                        <fieldset>
+                            <legend>Join Our Newsletter</legend>
+                            <ul class="c-form-list">
+                                <li class="c-form-list__item c-control-group u-flex">
+                                    <input class="c-form-input c-form-input--large c-control-group__field u-font-tiny u-text-uppercase"
+                                           type="email" name="email" value="" aria-label="Enter your email"
+                                           placeholder="Enter your email" required>
+                                    <button class="o-layout--no-shrink c-button c-button--large	c-control-group__button u-bg-black u-font-small u-text-uppercase">
+                                        Sign Up
+                                    </button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <br>
+                </div>
+                <nav class="c-menu c-collapsible-menu">
+                    <input id="hours" class="c-collapsible-menu__trigger" type="checkbox">
+                    <label class="c-collapsible-menu__label u-color-gray-50 u-font-small u-text-regular u-text-uppercase u-hidden--l"
+                           for="hours">Hours</label>
+                    <div class="c-menu__list">
+                        <div id="store_hours" class="readytheme-contentsection">
+                            <h5 class="c-menu__title u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase">
+                                Hours</h5>
+                            <p class="u-text-medium u-text-uppercase c-text-body">
+                                <span itemprop="openingHours"
+                                      content="Mo,Tu,We,Th,Fr 08:30-17:00">M-F 8:30AM-5:00PM PST</span>
+                            </p>
+                        </div>
+                        <div class="t-global-footer-social-links">
+                            <ul class="o-list-inline">
+                                <li class="o-list-block__item c-menu__title u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase">
+                                    Social
+                                </li>
+                                <li class="o-list-inline__item">
+                                    <a class="u-icon-facebook u-color-gray-40" href="https://www.facebook.com/"
+                                       title="Facebook" target="_blank" rel="noreferrer" itemprop="sameAs"
+                                       aria-label="Facebook"></a>
+                                </li>
+                                <li class="o-list-inline__item">
+                                    <a class="u-icon-twitter u-color-gray-40" href="https://twitter.com/"
+                                       title="Twitter" target="_blank" rel="noreferrer" itemprop="sameAs"
+                                       aria-label="Twitter"></a>
+                                </li>
+                                <li class="o-list-inline__item">
+                                    <a class="u-icon-instagram u-color-gray-40" href="https://www.instagram.com/"
+                                       title="Instagram" target="_blank" rel="noreferrer" itemprop="sameAs"
+                                       aria-label="Instagram"></a>
+                                </li>
+                                <li class="o-list-inline__item">
+                                    <a class="u-icon-google u-color-gray-40" href="https://plus.google.com/"
+                                       title="Google+" target="_blank" rel="noreferrer" itemprop="sameAs"
+                                       aria-label="Google+"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <div class="o-layout o-layout--flush o-layout__item u-width-12 u-width-8--l u-grids-1 u-grids-3--l">
+                <section class="o-layout__item">
+                    <nav class="c-menu c-collapsible-menu">
+                        <input id="links_resources" class="c-collapsible-menu__trigger" type="checkbox">
+                        <label class="c-collapsible-menu__label u-color-gray-50 u-font-small u-text-regular u-text-uppercase"
+                               for="links_resources">Resources</label>
+                        <h5 class="c-menu__title u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase">
+                            Resources</h5>
+                        <ul class="c-menu__list">
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/customer-account.html" target="_self">My
+                                    Account</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/wish-lists.html" target="_self">Wish List</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/storefront.html" target="_self">Wholesale</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/mm5/merchant.mvc?Screen=CTGY&amp;Category_Code=deals"
+                                   target="_self">Deals</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/storefront.html" target="_self">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="o-layout__item">
+                    <nav class="c-menu c-collapsible-menu">
+                        <input id="links_our_company" class="c-collapsible-menu__trigger" type="checkbox">
+                        <label class="c-collapsible-menu__label u-color-gray-50 u-font-small u-text-regular u-text-uppercase"
+                               for="links_our_company">Our Company</label>
+                        <h5 class="c-menu__title u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase">Our
+                            Company</h5>
+                        <ul class="c-menu__list">
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/about-us.html" target="_self">About Us</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/storefront.html" target="_self">Careers</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/storefront.html" target="_self">Store
+                                    Locations</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/storefront.html" target="_self">Terms &
+                                    Conditions</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/privacy-policy.html" target="_self">Privacy
+                                    Policy</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="o-layout__item">
+                    <nav class="c-menu c-collapsible-menu">
+                        <input id="links_help" class="c-collapsible-menu__trigger" type="checkbox">
+                        <label class="c-collapsible-menu__label u-color-gray-50 u-font-small u-text-regular u-text-uppercase"
+                               for="links_help">Help & Orders</label>
+                        <h5 class="c-menu__title u-color-gray-50 u-font-tiny u-text-medium u-text-uppercase">Help &
+                            Orders</h5>
+                        <ul class="c-menu__list">
+                            <li>
+                                <a class="c-menu__link t-primary-link" href="https://professional.lafco.com/faqs.html"
+                                   target="_self">FAQs</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/contact-us.html" target="_self">Customer
+                                    Service</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/shipping-and-return-policy.html" target="_self">Return
+                                    Policy</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/shipping-and-return-policy.html" target="_self">Shipping
+                                    & Delivery</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/sitemap.html" target="_self">Site Map</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/storefront.html" target="_self">Site
+                                    Feedback</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/storefront.html" target="_self">Warranty</a>
+                            </li>
+                            <li>
+                                <a class="c-menu__link t-primary-link"
+                                   href="https://professional.lafco.com/order-status.html" target="_self">Order
+                                    Status</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end t-site-footer -->
+<div id="site_copyright" class="readytheme-contentsection">
+    <section class="o-wrapper o-wrapper--full t-site-copyright">
+        <p class="u-font-tiny u-text-center u-text-left--l u-text-uppercase">&copy; 2020 Lafco New York. All Rights
+            Reserved. <a href="https://www.miva.com" rel="nofollow noreferrer" target="_blank">Powered by Miva</a></p>
+    </section>
+    <!-- end t-site-copyright -->
+</div>
+<script data-resource-group="footer_js" data-resource-code="settings">theme_path = 'themes/colossus/';
+(function (mivaJS) {
+    mivaJS.ReadyThemeVersion = '1.0.2';
+    mivaJS.Store_Code = 'PLFCO';
+    mivaJS.Product_Code = '';
+    mivaJS.Category_Code = '';
+    mivaJS.Customer_Login = '';
+    mivaJS.Page = 'SFNT';
+    mivaJS.Screen = 'SFNT';
+}(window.mivaJS || (window.mivaJS = {})));</script>
+<script src="http://professional.lafco.com/mm5/json.mvc?Store_Code=PLFCO&amp;Function=JavaScriptCombinedResource_Output&amp;JavaScriptCombinedResource_Code=site-scripts&T=a72ccde7"
+        data-resource-group="footer_js" data-resource-code="site-scripts"></script>
+<div id="elements-core" class="readytheme-contentsection">
+</div>
+
+<script type="text/javascript">
+    var Product_Code = '';
+    var Screen = 'SFNT';
+</script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    window['ga-disable-123445'] = true;
+    ga('create', '123445', 'auto');
+
+
+    ga('send', 'pageview', {'page': 'https:\/\/professional.lafco.com\/storefront.html'});
+
+
+</script>
+</body>
+</html>
